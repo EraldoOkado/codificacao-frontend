@@ -8,25 +8,24 @@
 body {
     background-color: #000;
     color: #fff;
-    padding: 10px 30px;
+    padding: 10px 30px 0px 30px;
     background: url('https://wallpapersmug.com/download/2560x1080/1786fa/snowy-peak-flat-mountains-minimal.jpg') no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
     background-position: center;
-    font-family: Arial;
-}
-
-.texto-esquerda {
-    position: absolute;
-    bottom: -125px;
-    margin: 5px;
+    font-family: Arial !important;
 }
 
 .cabecalho {
     font-size: 1.8rem;
 }
 
+.ativo {
+    color: black;
+    background-color: white;
+}
+
 .cabecalho ul {
-    height: 40px;
+    /* height: 40px; */
     background-color: #000;
     opacity: 0.6;
     padding: 25px 50px;
@@ -39,7 +38,13 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    /* font-weight: bold; */
+    transition: 0.7s all;
+}
+
+.cabecalho a:hover {
+    transition: 0.7s all;
+    color: skyblue;
+    text-shadow: 0px 0px 15px skyblue;
 }
 
 .menu {
@@ -66,6 +71,14 @@ body {
     color: #000;
 }
 
+.estrutura {
+    height: 100vh;
+}
+
+.titulo-principal, h3 {
+    font-size: 3.5rem !important;
+}
+
 .contato {
     padding: 20px;
     border-radius: 30px;
@@ -81,6 +94,10 @@ body {
     background: #00000091;
 }
 
+/* .contato label {
+    font-weight: bold;
+} */
+
 .contato label, .contato textarea {
     display: block;
     width: 100%;
@@ -92,10 +109,25 @@ body {
     padding: 5px;
     outline: none;
     width: 75%;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.7s all;
+}
+
+.contato input:focus, .contato textarea:focus {
+    transition: 0.7s all;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.contato input:hover, .contato textarea:hover {
+    transition: 0.7s all;
+    box-shadow: 0px 0px 15px skyblue;
 }
 
 .contato textarea {
-    height: 100px;
+    height: 120px;
     text-align: center;
     margin: 0 auto;
 }
@@ -103,6 +135,14 @@ body {
 .enviar {
     width: 40%;
     margin-top: 10px;
+    transition: 0.7s all;
+}
+
+.enviar:hover {
+    transition: 0.7s all;
+    color: white;
+    background-color: skyblue;
+    box-shadow: 0px 0px 15px skyblue;
 }
 
 .contato input[type=submit]{
@@ -110,12 +150,41 @@ body {
     margin-top: 10px;
 }
 
-.main {
+.principal {
     font-size: 3rem;
     color: #696969;
     width: 60%;
     display: inline-block;
     margin: 6rem;
+}
+
+@media (max-width: 1280px){
+    .cabecalho {
+        margin-top: 10px;
+    }
+    .cabecalho ul {
+        font-size: 1.1rem;
+        height: auto;
+    }
+    .principal {
+        font-size: 1.8rem;
+        margin: 2.6rem;
+        width: 55%;
+        padding: 0;
+    }
+    .contato {
+        padding: 5px;
+        width: 350px;
+        right: 15px;
+        top: 90px;
+    }
+}
+
+@media (min-height: 1366px){
+    body {
+        background: url('https://wallpapersmug.com/download/2560x1080/1786fa/snowy-peak-flat-mountains-minimal.jpg');
+        background-repeat: round;
+    }
 }
 
 @media (max-width: 798px) {
@@ -129,11 +198,11 @@ body {
     .menu {
         display: none;
     }
-    .titulo-main {
+    .titulo-principal {
         display: block;
         position: relative;
         width: 100%;
-        font-size: 2rem;
+        /* font-size: 3.5rem !important; */
     }
     .contato {
         position: relative;
@@ -145,7 +214,7 @@ body {
         font-size: 1.4rem;
         padding: 0px;
     }
-    .main {
+    .principal {
         margin: 0;
         text-align: center;
         font-size: 1.9rem;
@@ -153,9 +222,26 @@ body {
         margin-top: 12px;
         margin-bottom: 12px;
     }
-    .container {
+    .estrutura {
         width: 100%;
         padding: 0;
         margin: 0;
     }
+    body {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 320px){
+    .cabecalho ul {
+        height: auto;
+    }
+}
+
+.rodape {
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+    margin-left: -56px;
 }

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background: url('https://hdwallsource.com/img/2018/1/space-rocket-flat-design-wallpaper-63428-65505-hd-wallpapers.jpg') no-repeat;
+}
+
+.sobre {
+    color: white;
+    max-width: 980px;
+    text-align: center;
+    margin: 5rem auto; 
+}
+
+.sobre h3 {
+    font-size: 4rem;
+}
+
+.sobre p {
+    font-size: 2rem;
+}
+
+.estrutura {
+    height: auto;
+}
