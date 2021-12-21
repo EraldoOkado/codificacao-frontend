@@ -243,5 +243,13 @@ body {
     text-align: center;
     background-color: black;
     width: 100vw;
-    margin-left: -56px;
+    margin-left: -46px;
+}
+
+canvas {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
